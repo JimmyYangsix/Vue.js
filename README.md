@@ -4,7 +4,7 @@
 `M`:JavaScript对象 进行数据交换 <pre><code>model</code></pre>
 `V`: 进行视图交换<pre><code>View</code></pre>
 `MV`: <pre><code>View Model</code></pre>
-## Vue-cli
+## 2.Vue-cli
 `Vue脚手架`:帮助我们写好Vue.js基础代码的工具
 
 `Vue-cli`功能：
@@ -61,3 +61,45 @@ npm install
 ```npm
 $npm run dev
 ```
+## 3.目录文件详解
+### 1.build目录
+此目录是webpack配置相关文件
+### 2.config目录
+
+### 3.node_modules目录
+此目录是npm install安装的代码依赖库
+### 4.src目录
+此目录是开发目录，开发文件存放此目录下
+### 5.static目录
+此目录存放第三方文件，为空时会存在.gitkeep文件，作用可以会提交到git仓库里，否则会忽略空文件的文件夹
+### 6.当前目录
+#### 1.babelrc文件
+babelrc一些配置，ES6通过babelrc变为ES5语法
+ `presets[预设插件]` :代表babeilrc转换需要预先安装的插件，对应的插件可以在 `node_modules目录`找到
+ `plugins[配置插件]` :ES6方法做转换
+ `comments` :false(false代表转化后不生成注释)
+#### 2.editorconfig文件
+ 适用于编辑器相关配置
+ `charset` :字符编码
+ `indent_style` :缩进风格
+ `indent_size` :缩进大小
+ `end_of_line` :换行风格
+ `insert_final_newline` :文件末尾插入新行
+ `trim_trailing_whitespece` :自动清除末尾空格
+#### 3.eslintignore文件
+ 忽略语法检查的目录文件
+ 忽略指定文件的检查
+#### 4.eslintrc.js文件
+ eslint配置文件
+ `extends`:继承标准的规则
+ `rules`:此处可以修改规则
+#### 5.gitignore文件
+ 忽略git仓库的提交
+#### 6.index.html文件
+ 在编译之后会自动插入其中
+#### 7.package.json文件
+ 项目配置文件:描述项目
+  `script` :可以执行的一些命令
+  `dependencies` :一些依赖
+  `devDependencies` :编译过程的一些依赖
+  
