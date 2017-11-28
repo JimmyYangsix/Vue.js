@@ -107,7 +107,7 @@ babelrc一些配置，ES6通过babelrc变为ES5语法
 ## 4.项目运行
 ### 实例化Vue
 1. el: 'body'挂载点   
-2. components:{App}
+2. components:{App}:此处相当于调用了App.Vue组件   
 `易错点`
 1. 注释与\\直接没有空格报错
-2. 代码缩进存在问题报错
+2. 代码缩进存在问题报错、，
