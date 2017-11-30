@@ -36,6 +36,9 @@ export default {
 h1, h2 {
   font-weight: normal;
 }
+h1:hover{
+color: #42b983;
+}
 ul {
   list-style-type: none;
   padding: 0;
